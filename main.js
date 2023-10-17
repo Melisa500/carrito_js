@@ -33,7 +33,7 @@ function toggleDesktopMenu(event){
         productDetailContainer.classList.add('inactive');
     }
 
-    desktopMenu.classList.toggle('inactive');
+    // desktopMenu.classList.toggle('inactive');
     desktopMenuContainer.classList.toggle('inactive');
 
 /*     window.onclick = function(event) {
@@ -60,7 +60,7 @@ function toggleShoppingCartAside(){
     const isMobileMenuClosed = mobileMenu.classList.contains('inactive');
     const isProductDetailClosed = productDetailContainer.classList.contains('inactive');
     //const isMenuEmailClosed = menuEmail.classList.contains('inactive');
-    const isDesktopMenuClosed = desktopMenu.classList.contains('inactive'); 
+    const isDesktopMenuClosed = desktopMenuContainer.classList.contains('inactive'); 
 
     if(!isMobileMenuClosed){
         mobileMenu.classList.add('inactive');
@@ -73,7 +73,7 @@ function toggleShoppingCartAside(){
     shoppingCartContainer.classList.toggle('inactive');
 
     if(!isDesktopMenuClosed) {
-        desktopMenu.classList.add('inactive');
+        desktopMenuContainer.classList.add('inactive');
     }
 }
 
@@ -92,7 +92,7 @@ function toggleMobileMenu(){
 function openProductDetailAside(){
     shoppingCartContainer.classList.add('inactive');
     productDetailContainer.classList.remove('inactive');
-    desktopMenu.classList.add('inactive'); 
+    desktopMenuContainer.classList.add('inactive'); 
 
     modal.className = "modal is-visuallyHidden";
     setTimeout(function() {
